@@ -1,0 +1,426 @@
+
+@font-face {
+	font-family: Intel One Display;
+	src: url(../../../fonts/intelone-display-bold.woff) format("woff");
+	font-weight: 700;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Display;
+	src: url(../../../fonts/intelone-display-light.woff) format("woff");
+	font-weight: 300;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Display;
+	src: url(../../../fonts/intelone-display-medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Display;
+	src: url(../../../fonts/intelone-display-regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-bold.woff) format("woff");
+	font-weight: 700;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-bolditalic.woff) format("woff");
+	font-weight: 700;
+	font-style: italic
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-italic.woff) format("woff");
+	font-weight: 400;
+	font-style: italic
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-light.woff) format("woff");
+	font-weight: 300;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-lightitalic.woff) format("woff");
+	font-weight: 300;
+	font-style: italic
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-mediumitalic.woff) format("woff");
+	font-weight: 500;
+	font-style: italic
+}
+
+@font-face {
+	font-family: Intel One Text;
+	src: url(../../../fonts/intelone-text-regular.woff) format("woff");
+	font-weight: 400;
+	font-style: normal
+}
+
+body {
+	font-family: Intel One Text, sans-serif;
+	color: #555
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Intel One Display, sans-serif
+}
+
+.h1,
+h1 {
+	font-size: 45px
+}
+
+.h1,
+.h2,
+h1,
+h2 {
+	font-weight: 300
+}
+
+.h2,
+h2 {
+	font-size: 30px
+}
+
+p {
+	font-weight: 300
+}
+
+.hero {
+	overflow: hidden
+}
+
+.hero .h1,
+.hero h1,
+.hero p {
+	
+}
+
+@media(max-width:991px) {
+	.hero img {
+		max-width: 80%
+	}
+}
+
+.hero-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image: url(../../images/hero.png);
+	background-size: auto 5000px;
+	background-position: 50%;
+	z-index: -1
+}
+
+.btn {
+	font-family: Intel One Display, sans-serif;
+	border-radius: 0;
+	font-size: 14px;
+	padding: 10px 20px
+}
+
+.btn-primary {
+	background-color: #0078d4;
+	border-color: #0078d4
+}
+
+.btn-primary:hover {
+	background-color: #003b7b;
+	border-color: #003b7b
+}
+
+.btn-tertiary {
+	background-color: transparent;
+	border-color: #0078d4;
+	color: #0078d4
+}
+
+.btn-tertiary:hover {
+	background-color: #0078d4;
+	border-color: #0078d4;
+	color: #fff
+}
+
+.btn-secondary {
+	background-color: transparent;
+	border-color: #00c7fd;
+	color: #00c7fd
+}
+
+.btn-secondary:hover {
+	background-color: #009fca;
+	border-color: #009fca;
+	color: #fff
+}
+
+@media(max-width:767px) {
+	.container {
+		padding-left: 20px;
+		padding-right: 20px
+	}
+}
+/* 
+@media(min-width:1200px) {
+	.container {
+		max-width: 940px
+	}
+} */
+
+.navbar {
+	z-index: 10
+}
+
+.navbar,
+.navbar .navbar-brand {
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+.navbar .nav-link {
+	color: #0078d4;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 12px
+}
+
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+	color: #003b7b
+}
+
+.navbar .navbar-toggler {
+	border: none;
+	padding: 0
+}
+
+.navbar .navbar-toggler-icon {
+	width: 1em;
+	height: 1em;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar .navbar-nav {
+	gap: 24px
+}
+
+@media(max-width:991px) {
+	.navbar .navbar-nav {
+		flex-direction: row;
+		gap: 0;
+		flex-wrap: wrap;
+		background-color: #c8c8c8
+	}
+
+	.navbar .navbar-nav .nav-item {
+		width: 33.3333333333%;
+		text-align: center
+	}
+
+	.navbar .navbar-collapse {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		padding: 0;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+		transition: max-height .3s ease-out;
+		overflow: hidden
+	}
+
+	.navbar .nav-link {
+		padding: 20px;
+		font-size: 12px;
+		font-weight: 400
+	}
+}
+
+.subnav {
+	background-color: #fff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 9;
+	width: 100%
+}
+
+@media(max-width:768px) {
+	.subnav .container {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		padding: 0 !important
+	}
+}
+
+.subnav-toggle {
+	display: none
+}
+
+.subnav-toggle.active {
+	background: #c8c8c8
+}
+
+.subnav-toggle.active .hamburger,
+.subnav-toggle.active .hamburger:after,
+.subnav-toggle.active .hamburger:before {
+	background: #fff
+}
+
+.subnav-list {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+
+.subnav-link {
+	display: inline-block;
+	padding: 16px;
+	color: #222;
+	text-decoration: none;
+	font-size: 14px;
+	height: 100%;
+	border-bottom: 2px solid transparent
+}
+
+.subnav-link:focus,
+.subnav-link:hover {
+	border-bottom: 2px solid #00c7fd
+}
+
+.subnav-link.active {
+	border-bottom: 2px solid #0078d4
+}
+
+@media(max-width:767px) {
+	.subnav-toggle {
+		display: block;
+		background: none;
+		border: none;
+		padding: 32px;
+		cursor: pointer
+	}
+
+	.hamburger {
+		display: block;
+		width: 20px;
+		height: 3px;
+		background-color: #222;
+		position: relative
+	}
+
+	.hamburger:after,
+	.hamburger:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 3px;
+		background-color: #222;
+		left: 0
+	}
+
+	.hamburger:before {
+		top: -6px
+	}
+
+	.hamburger:after {
+		bottom: -6px
+	}
+
+	.subnav-list {
+		display: block;
+		flex-direction: column;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .3s ease-out
+	}
+
+	.subnav-list.open {
+		max-height: 500px;
+		transition: max-height .5s ease-in
+	}
+
+	.subnav-item {
+		width: 100%
+	}
+
+	.subnav-link {
+		display: block;
+		padding: 16px 20px;
+		border-bottom: none !important
+	}
+}
+
+.legal-footer {
+	background-color: #fff;
+	font-size: .8rem
+}
+
+.legal-footer .footnotes {
+	padding-left: 1.5rem;
+	margin-bottom: 1rem
+}
+
+.legal-footer a {
+	color: #0078d4
+}
+
+.legal-footer .legal-text {
+	font-size: .7rem;
+	color: #000
+}
+
+.sr-only {
+	display: none
+}
+
+.box-shadow {
+	box-shadow: 0 2px 32px -4px #000
+}
