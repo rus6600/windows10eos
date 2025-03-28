@@ -42,7 +42,7 @@
 					<div class="row align-items-center py-4">						
 						<div class="col-10 col-md-6">
 							<h1 class="mb-4">Устаревшие ПК подвергают <br> ваш бизнес риску</h1>
-							<p class=" mb-4">Обновитесь сейчас, пока <br> не закончилась поддержка <br> Windows 10</p><a class="btn btn-primary" href="#explore-devices">Исследуйте сейчас</a>
+							<p id="hero-subtitle" class="hero-subtitle mb-4">Обновитесь сейчас, пока <br> не закончилась поддержка <br> Windows 10</p><a class="btn btn-primary" href="#explore-devices">Исследуйте сейчас</a>
 							<div class="pt-6 pt-lg-8">
 								<img class="core-ultra-processor-badge" src="./images/core-ultra-processor-badge-50x50px.png" alt="Intel Core Ultra Processor Badge" width="75" height="75" />
 							</div>
@@ -75,20 +75,20 @@
 					<h2 class="text-center">Создан, чтобы помочь вам оставаться впереди и в безопасности.</h2>
 					<p class="text-center">Оставайтесь в безопасности и будьте в курсе событий с новыми ПК на базе Windows 11 Pro с искусственным интеллектом, процессорами Intel® Core™ Ultra, которые поставляются с включенными по умолчанию уровнями безопасности и эффективностью, улучшенной с помощью искусственного интеллекта.</p>
 					<div class="row justify-content-between mt-5">
-						<div class="col-12 col-lg-3 mb-4 mb-lg-0">
-							<div class="stat-card py-4 px-3">
+						<div class=" col-12 col-lg-3 mb-4 mb-lg-0">
+							<div class="procent stat-card py-4 px-3">
 								<p class="stat-number">58<small>%</small></p>
 								<p class="stat-description mb-0"><span>сообщили о снижении</span> <br/>числа инцидентов, связанных с безопасностью<sup>3</sup></p>
 							</div>
 						</div>
-						<div class="col-12 col-lg-3 mb-4 mb-lg-0">
-							<div class="stat-card py-4 px-3">
+						<div class=" col-12 col-lg-3 mb-4 mb-lg-0">
+							<div class="procent stat-card py-4 px-3">
 								<p class="stat-number">50<small>%</small></p>
 								<p class="stat-description mb-0"><span>более быстрые рабочие</span> <br/>процессы в среднем<sup>4</sup> </p>
 							</div>
 						</div>
-						<div class="col-12 col-lg-3">
-							<div class="stat-card py-4 px-3">
+						<div class=" col-12 col-lg-3">
+							<div class="procent stat-card py-4 px-3">
 								<p class="stat-number">80<small></small>%</small></p>
 								<p class="stat-description mb-0"><span>сообщили о снижении</span> <br/>количества звонков в службу поддержки<sup>5</sup></p>
 							</div>
@@ -210,153 +210,111 @@
 				</div>
 			</section>
 
-			<section id="microsoft-copilot" class="pt-5">
-				<div class="container">
-					<h2 class="text-center mb-5">Откройте для себя Microsoft Copilot</h2>
-					<div class="row ">
-						<div class="col-12 col-lg-6 mb-4 mb-lg-0">
-							<div class="pe-xl-3">
-								<div class="copilot-card">
-									<img src="./images/MSC24-Japan-business-Getty-1150744118-rgb.png" alt="" />
-									<div class="px-4 py-4">
-										<h4>Обобщите и перепишите</h4>
-										<p>Получайте свежие идеи и редактируйте сложный контент с помощью Microsoft Copilot. Экономьте время, быстро создавая резюме и транскрипты с расширенной поддержкой текстовых, PDF и аудиофайлов.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-lg-6">
-							<div class="ps-xl-3 h-100">
-								<div class="copilot-card h-100">
-									<img src="./images/MSC24-Canada-meeting-Getty-1176621232-rgb.png" alt="" />
-									<div class="px-4 py-4 ">
-									<h4>Поиск соответствующего контента</h4>
-										<p> Экономьте драгоценное время и получайте лучшие результаты, печатая, говоря или рисуя в Microsoft Copilot, чтобы выполнять поиск практически по любой предоставленной вами информации, включая изображения.</p>
-									</div>
-								</div>
-							</div>
-						</div>
+			<section class="microsoft-copilot" id="microsoft-copilot" class="pt-5">
+				<div class="open-copilot">
+					<img src="./images/MSC24-Japan-business-Getty-1150744118-rgb.png" alt="" />
+					<div class="open-copilot__desc py-4">
+						<h4>Обобщите и перепишите</h4>
+						<p>Получайте свежие идеи и редактируйте сложный контент с помощью Microsoft Copilot. Экономьте время, быстро создавая резюме и транскрипты с расширенной поддержкой текстовых, PDF и аудиофайлов.</p>
+					</div>
+				</div>
+				<div class="open-copilot">
+					<img src="./images/MSC24-Canada-meeting-Getty-1176621232-rgb.png" alt="" />
+					<div class="open-copilot__desc x-4 py-4 ">
+					<h4>Поиск соответствующего контента</h4>
+						<p> Экономьте драгоценное время и получайте лучшие результаты, печатая, говоря или рисуя в Microsoft Copilot, чтобы выполнять поиск практически по любой предоставленной вами информации, включая изображения.</p>
 					</div>
 				</div>
 			</section>
 			
-			<section id="explore-devices" class="pt-6">
-				<div class="container">
+			<section >
+				<div >
 					<h2 class="text-center mb-5">Найдите подходящее устройство для подходящих пользователей</h2>
 				
 					<div class="notebooks">
-						<div class=" mb-4">
-							<div class="pe-xl-3">
-								<div class="device-card">
-									<img src="./images/LenovoThinkBook14G6.jpg" alt="" />
-									<div class="py-4">
-										<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=21KJ008KRU&Condition=ok&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
-											<h4 class="px-4">Lenovo ThinkBook 14 G6</h4>
-										</a>
-										<hr>
-										<ul class="notebooks__desc px-4 list-unstyled">
-											<li>		Диагональ экрана, дюймов 15.6</li>
-											<li>Процессор: Intel Core i3-1115G4 3.00GHz Dual
-											</li>
-											<li>Оперативная память, ГБ 8 GB
-											</li>
-											<li>Жесткий диск, ГБ 256GB SSD
-											</li>
-											<li>Графика интегрированная Integrated
-											</li>
-											<li>
-												Цена: Было 289 990, Стало 269 990
-											</li>
-										</ul>
-								
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" mb-4">
-							<div class="pe-xl-3">
-								<div class="device-card">
-									<img src="./images/HPProBook450NBPC.webp" alt="" />
-									<div class="py-4">
-										<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=6A285EA&Condition=%25d0%25bc%25d1%258f%25d1%2582%25d0%25b0%25d1%258f&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
-											<h4 class="px-4">HP ProBook 450 NB PC </h4>
-										</a>
-										<hr>
-										<ul class="notebooks__desc px-4 list-unstyled">
-											<li>Диагональ экрана, дюймов 15.6</li>
-											<li>Процессор: Intel Core i5 1334U</li>
-											<li>Жесткий диск: 512GB SSD
-											</li>
-											<li>Графика: Intel Iris XE
-											</li>
-											<li>Оперативная память, ГБ 8 GB
-											</li>
-											<li>
-												Цена: Было 286 990, Стало 266 990
-											</li>
-										</ul>
-					
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" mb-4">
-							<div class="pe-xl-3">
-								<div class="device-card">
-									<img src="./images/HPLaptop16.jpg" alt="" />
-									<div class="py-4">
-										<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=6X7Q6EA&Condition=ok&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
-											<h4 class="px-4">HP Laptop 16-d1073ci 16.1" FHD</h4>
-										</a>
-										<hr>
-										<ul class="notebooks__desc px-4 list-unstyled">
-											<li>Диагональ экрана 16.1" FHD</li>
-											<li>Процессор Intel Core i5-12500H 2,5Ghz 12Cores
-											</li>
-											<li>Оперативная память 16GB
-											</li>
-											<li>Жесткий диск 512GB SSD
-											</li>
-											<li>Графика NVIDIA GeForce RTX3060 6GB
-											</li>
-											<li>
-												Цена: Было 451 990, Стало 420 990
-											</li>
-										</ul>
+						<div class="notebook">
+							<img src="./images/LenovoThinkBook14G6.jpg" alt="" />
+							<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=21KJ008KRU&Condition=ok&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
+								<h4 class="px-4">Lenovo ThinkBook 14 G6</h4>
+							</a>
+							<ul class="notebooks__desc px-4 list-unstyled">
+								<li>		Диагональ экрана, дюймов 15.6</li>
+								<li>Процессор: Intel Core i3-1115G4 3.00GHz Dual
+								</li>
+								<li>Оперативная память, ГБ 8 GB
+								</li>
+								<li>Жесткий диск, ГБ 256GB SSD
+								</li>
+								<li>Графика интегрированная Integrated
+								</li>
+								<li>
+									Цена: Было 289 990, Стало 269 990
+								</li>
+							</ul>
 
-									</div>
-								</div>
-							</div>
 						</div>
-						<div class=" mb-4">
-							<div class="pe-xl-3">
-								<div class="device-card">
-									<img src="./images/Lenovo ThinkPad E15 Gen 2-ITU.png" alt="" />
-									<div class="py-4">
-										<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=20TD001PRT&Condition=%25d0%25b2%25d1%2581%25d0%25ba%25d1%2580%25d1%258b%25d1%2582%25d0%25b0%25d1%258f&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
-											<h4 class="px-4">Lenovo ThinkPad E15 Gen 2-ITU</h4>
-										</a>
-										<hr>
-										<ul class="notebooks__desc px-4 list-unstyled">
-											<li>Диагональ экрана 15'6 FHD</li>
-											<li>Процессор Intel Core i5-1235U
-											</li>
-											<li>Оперативная память 8GB
-											</li>
-											<li>Жесткий диск 256 GB SSD
-											</li>
-											<li>Графика Intel Iris XE
-											</li>
-											<li>
-												Цена: Было 311 990, Стало 285 990
-											</li>
-										</ul>
-										
-									</div>
-								</div>
-							</div>
+
+						<div class="notebook">
+							<img src="./images/HPProBook450NBPC.jpg" alt="" />
+							<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=6A285EA&Condition=%25d0%25bc%25d1%258f%25d1%2582%25d0%25b0%25d1%258f&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
+								<h4 class="px-4">HP ProBook 450 NB PC </h4>
+							</a>
+							<ul class="notebooks__desc px-4 list-unstyled">
+								<li>Диагональ экрана, дюймов 15.6</li>
+								<li>Процессор: Intel Core i5 1334U</li>
+								<li>Жесткий диск: 512GB SSD
+								</li>
+								<li>Графика: Intel Iris XE
+								</li>
+								<li>Оперативная память, ГБ 8 GB
+								</li>
+								<li>
+									Цена: Было 286 990, Стало 266 990
+								</li>
+							</ul>
+
 						</div>
-					
+						<div class="notebook">
+							<img src="./images/HPLaptop16.jpg" alt="" />
+							<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=6X7Q6EA&Condition=ok&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
+								<h4 class="px-4">HP Laptop 16-d1073ci 16.1" FHD</h4>
+							</a>
+							<ul class="notebooks__desc px-4 list-unstyled">
+								<li>Диагональ экрана 16.1" FHD</li>
+								<li>Процессор Intel Core i5-12500H 2,5Ghz 12Cores
+								</li>
+								<li>Оперативная память 16GB
+								</li>
+								<li>Жесткий диск 512GB SSD
+								</li>
+								<li>Графика NVIDIA GeForce RTX3060 6GB
+								</li>
+								<li>
+									Цена: Было 451 990, Стало 420 990
+								</li>
+							</ul>
+
+						</div>
+						<div class="notebook">
+							<img src="./images/Lenovo ThinkPad E15 Gen 2-ITU.png" alt="" />
+							<a target="_blank" href="https://b2b.marvel.kz/Stock/Details?ItemId=20TD001PRT&Condition=%25d0%25b2%25d1%2581%25d0%25ba%25d1%2580%25d1%258b%25d1%2582%25d0%25b0%25d1%258f&Filter=Standard&PileId=%D0%BE%D1%81%D0%BD&InventLocationSalesGroupId=KZ#none" >
+								<h4 class="px-4">Lenovo ThinkPad E15 Gen 2-ITU</h4>
+							</a>
+							<ul class="notebooks__desc px-4 list-unstyled">
+								<li>Диагональ экрана 15'6 FHD</li>
+								<li>Процессор Intel Core i5-1235U
+								</li>
+								<li>Оперативная память 8GB
+								</li>
+								<li>Жесткий диск 256 GB SSD
+								</li>
+								<li>Графика Intel Iris XE
+								</li>
+								<li>
+									Цена: Было 311 990, Стало 285 990
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
